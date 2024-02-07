@@ -3,7 +3,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import {
   BrowserRouter,
   Routes,
-  //  Navigate,
+ 
   Route,
 } from "react-router-dom";
 import Login from "./pages/Auth/Login";
@@ -15,14 +15,12 @@ import AppLayout from "./ui/AppLayout";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./ui/ProtectedRoute";
 import { Toaster } from "react-hot-toast";
-// import Sidebar from './components/Sidebar';
-// import Dashboard from './pages/Dashboard.jsx';
-// import About from './pages/About.jsx';
-// import Analytics from './pages/Analytics.jsx';
-// import Comment from './pages/Comment.jsx';
-// import Product from './pages/Product.jsx';
-// import ProductList from './pages/ProductList.jsx';
-// import Sidebar from "./pages/Sidebar.jsx";
+import Vitals from "./pages/Vitals";
+import BookAppointment from "./pages/BookAppointment";
+import PaymentGateway from "./pages/PaymentGateway";
+import SecureChat from "./pages/SecureChat";
+import PatientProfile from "./pages/PatientProfile";
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -55,6 +53,11 @@ function App() {
         >
           {/* <Route index element={<Navigate replace to="dashboard" />}/> */}
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/vitals" element={<Vitals />} />
+          <Route path="/book-appointment" element={<BookAppointment />} />
+          <Route path="/payment-gateway" element={<PaymentGateway />} />
+          <Route path="/secure-chat" element={<SecureChat />} />
+          <Route path="/patient-profile" element={<PatientProfile />} />
         </Route>
       </Routes>
     </BrowserRouter>
