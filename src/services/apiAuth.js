@@ -12,7 +12,13 @@ export async function registerPatient() {
 }
 
 export async function loginPatient() {
-    const res = await fetch(`${API_URL}api/patients/login-patient`);
+    const res = await fetch(`${API_URL}api/patients/login-patient`, {
+        method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+    });
 
     if(!res.ok) throw Error("Login Error");
 
