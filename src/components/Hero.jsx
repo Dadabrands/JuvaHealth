@@ -1,7 +1,8 @@
 import styles from "../style";
 import Button from "./Button";
 // import { robot } from "../assets";
-import cartoon from "../assets/cartoon.png";
+import main from "../assets/main.png";
+// import cartoon from "../assets/cartoon.png";
 const Hero = () => {
   return (
     <section id="home" className={`flex md:flex-row flex-col py-3`}>
@@ -30,7 +31,7 @@ const Hero = () => {
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={cartoon} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+        <img src={main} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
 
        
       </div>

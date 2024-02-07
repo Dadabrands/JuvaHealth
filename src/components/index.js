@@ -8,6 +8,7 @@ import Services from "./Services";
 import Hero from "./Hero";
 import Plans from "./Plans";
 import Faqs from "./Faqs";
+import MiniNavbar from "./MiniNavbar";
 
 export {
   Navbar,
@@ -15,5 +16,8 @@ export {
   Testimonials,
   Hero,
   Services,
-  GetStarted, Plans, Faqs
+  GetStarted, 
+  Plans,
+  Faqs,
+  MiniNavbar
 };

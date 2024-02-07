@@ -11,6 +11,7 @@ import send from "./Send.svg";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
 import menu from "./menu.svg";
+import menuu from "./menuu.svg";
 import close from "./close.svg";
 import google from "./google.svg";
 import apple from "./apple.svg";
@@ -37,7 +38,7 @@ export {
   send,
   shield,
   star,
-  menu,
+  menu, menuu,
   close,
   google,
   apple,

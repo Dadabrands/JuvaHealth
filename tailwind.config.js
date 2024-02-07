@@ -6,11 +6,12 @@ export default {
   theme: {
 
     extend: {
+      
       colors: {
         primary: "#8730AB",
         secondary: "#F2D5FF",
         tertairy : "#F2D4FF",
-        // dimWhite: "rgba(255, 255, 255, 0.7)",
+        dimWhite: "rgba(255, 255, 255, 0.7)",
         // dimBlue: "rgba(9, 151, 124, 0.1)",
         black : "#000000",
         gray20 : "#333333",
@@ -22,6 +23,7 @@ export default {
       },
     },
     screens: {
+      xxxs: "280px",
       xxs: "360px",
       xs: "480px",
       ss: "620px",
