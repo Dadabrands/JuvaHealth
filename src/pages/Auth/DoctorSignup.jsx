@@ -1,10 +1,11 @@
-import { logo } from "../assets";
-import { MiniNavbar } from "../components";
+import { logo } from "../../assets";
+import { MiniNavbar } from "../../components";
 import { FaGoogle } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { MdArrowBack, MdEmail } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const DoctorSignup = () => {
   return (
@@ -25,12 +26,7 @@ const DoctorSignup = () => {
               We will be glad to have you on board!
             </span>
           </h1>
-          {/* <button
-            type="submit"
-            className="justify-center items-center px-16 py-5 mt-7 font-bold font-inter whitespace-nowrap bg-secondary text-black rounded-lg max-md:px-5 max-md:max-w-full"
-          >
-           Sign Up with Google <FaGoogle size={20} color="black" className="ml-2" />
-          </button> */}
+       
 
           <button
             type="submit"
@@ -197,12 +193,20 @@ const DoctorSignup = () => {
           </button>
 
           <p className="mt-4 leading-6 text-center font-inter text-zinc-800 max-md:max-w-full">
-            Have an Account Already?{" "}
+            Have an Account Already?
             <a href="/login">
-              {" "}
+           
               <span className="font-extrabold text-purple-800">Log In</span>
             </a>
           </p>
+          
+
+          <div className="flex items-center mb-4">
+            <Link to="/signup" className="text-primary flex font-inter items-center">
+              <MdArrowBack size={24} className="mr-2" />
+              Go Back
+            </Link>
+          </div>
         </div>
       </div>
     </>

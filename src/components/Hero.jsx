@@ -1,8 +1,7 @@
 import styles from "../style";
 import Button from "./Button";
-// import { robot } from "../assets";
+
 import main from "../assets/main.png";
-// import cartoon from "../assets/cartoon.png";
 const Hero = () => {
   return (
     <section id="home" className={`flex md:flex-row flex-col py-3`}>
@@ -11,9 +10,7 @@ const Hero = () => {
         <div className="flex flex-row justify-between items-center w-full text-wrap">
           <h1 className="flex-1 font-inter font-bold ss:text-[96px] text-[85px] text-black ss:leading-[90px] leading-[65px] text-wrap py-2 mt-0">
              Improving 
-             {/*
-            <br className="sm:block hidden" />
-            <span className="mt-6">Health</span>{" "} */}
+        
           </h1>
     
         </div>

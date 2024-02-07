@@ -1,7 +1,7 @@
-
 import { useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -9,10 +9,10 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <a href="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
+      <Link to="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
         <img src={logo} alt="" className="w-10 inline-block items-center" />
         <span> JUVA </span>
-      </a>
+      </Link>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 pl-[100px]">
         {navLinks.map((nav, index) => (
@@ -27,12 +27,12 @@ const Navbar = () => {
           </li>
         ))}
         <li className="px-14">
-          <button
-            type="button"
+          <Link
+            to="/login" // Changed to '/login' to navigate to the login page
             className="font-inter font-medium text-[18px] text-white bg-primary px-6 py-2 rounded"
           >
             Login/Sign Up
-          </button>
+          </Link>
         </li>
       </ul>
 
@@ -62,12 +62,12 @@ const Navbar = () => {
               </li>
             ))}
             <li className="mb-4">
-              <button
-                type="button"
+              <Link
+                to="/login"
                 className="font-inter font-medium text-[18px] text-white bg-primary px-6 py-2 rounded"
               >
                 Login/Sign Up
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
