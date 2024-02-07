@@ -10,7 +10,8 @@ export default function CalendarGfg() {
 
             <Calendar
                 onChange={onChange}
-                value={value} 
+                value={value}
+
                 
             />
         </div>

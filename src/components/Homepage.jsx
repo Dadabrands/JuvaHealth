@@ -35,7 +35,7 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div className={`${styles.flexCenter} ${styles.backgroundContainer}`}>
+          <div className={`${styles.flexCenter} ${styles.backgroundContainer} hidden`}>
             <div
               className={`${styles.boxWidth}  ${styles.paddingX} mb-40 mt-auto`}
               style={{
@@ -47,7 +47,7 @@ const Homepage = () => {
             </div>
           </div>
           <div
-            className={`bg-primary ${styles.paddingX} ${styles.flexCenter} mt-auto`}
+            className={`bg-primary ${styles.paddingX} ${styles.flexCenter} mt-auto hidden`}
             >
             <div className={`${styles.boxWidth} mb-40 ss:mb-auto xs:mb-auto`}>
               <Faqs />

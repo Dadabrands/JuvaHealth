@@ -44,16 +44,7 @@ const Login = () => {
         <div className="flex flex-col self-center px-2 md:px-16 py-4 md:py-12 mt-2 md:mt-10 max-w-full text-base bg-white rounded-2xl md:w-[1060px]
         w-[621px] max-md:px-5 max-md:mt-10">
       
-      {/* <h1 className="self-center mt-8 text-2xl md:text-4xl font-bold tracking-tighter leading-6 md:leading-10 text-black font-inter whitespace-nowrap">
-            <span>
-              <img
-                src={logo}
-                alt=""
-                className="grow self-start mt-1.5 inline-flex"
-              />
-            </span>
-            Welcome to JUVA
-          </h1> */}
+  
      <h1 className="self-center mt-8 text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-6 md:leading-10 text-black font-inter whitespace-nowrap max-w-full md:max-w-4xl xxxs:text-center xxxs:block">
   <img
     src={logo}
