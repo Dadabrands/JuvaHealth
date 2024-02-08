@@ -38,6 +38,6 @@ export async function loginPatient(data) {
 }
 
 
-export async function getCurrentUser() {
-    const res = await fetch(`${API_URL}api/pat`
-}
+// export async function getCurrentUser() {
+//     const res = await fetch(`${API_URL}api/pat`
+// }
