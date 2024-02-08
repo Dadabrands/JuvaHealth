@@ -6,6 +6,7 @@ import { useLoginPatient } from "./useLoginPatient";
 import { MiniNavbar } from "../../components";
 import { FaEyeSlash } from "react-icons/fa";
 import { logo } from "../../assets";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ const Login = () => {
         setPassword("");
       } }
     );
+    toast.success("code reached here")
     console.log("code reached here");
   }
   

@@ -37,6 +37,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false}/>
     <BrowserRouter>
+    
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/login" element={<Login />} />
@@ -61,15 +62,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    <Toaster position="top-center" gutter={12} containerStyle={{margin:"12px"}} toastOptions={{
-      success: {
-        duration: 3500
-      }, error: {
-        duration: 5000
-      }, style: {
-        fontSize:"17px", maxWidth:"500px", padding: "16px 24px" 
-      }
-    }}/> 
+     
     </QueryClientProvider>
   );
 }
