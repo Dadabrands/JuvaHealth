@@ -14,9 +14,10 @@ if (accessToken || !accessToken ) {
 // Send token to server for verification
 fetch('https://juva-telemed-backend.onrender.com/api/patients/get-patient', {
   method: 'GET',
-  // headers: {
-  //   'Authorization': `Bearer ${accessToken}`
-  // }
+  headers: {
+    'Authorization': `access_token ${"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWJkNWJiNGY3M2M1ZmRjNGQ2NDM5YjUiLCJlbWFpbCI6InZvdGluZ2dpdmVyc0BnbWFpbC5jb20iLCJpYXQiOjE3MDc0MDUwMzAsImV4cCI6MTcwNzQwODYzMH0.OY3WyGgaHARPQ4tVjwg8lp0v08QH87stjoCKPi96bks"}`,
+    "cookie": "access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWJkNWJiNGY3M2M1ZmRjNGQ2NDM5YjUiLCJlbWFpbCI6InZvdGluZ2dpdmVyc0BnbWFpbC5jb20iLCJpYXQiOjE3MDc0MDUwMzAsImV4cCI6MTcwNzQwODYzMH0.OY3WyGgaHARPQ4tVjwg8lp0v08QH87stjoCKPi96bks"
+  }
 })
 .then(response => response.json()).then(data => {
   console.log(data)

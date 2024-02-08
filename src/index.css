@@ -278,3 +278,11 @@
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
 }
+
+.react-select-container {
+  border: none;
+}
+
+.react-select__control {
+  border: none;
+}
