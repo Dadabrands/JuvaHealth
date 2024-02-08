@@ -1,3 +1,4 @@
+import { people01 } from "../assets";
 
 
 const PatientProfile = () => {
@@ -22,7 +23,7 @@ const PatientProfile = () => {
                       <div className="flex flex-col grow whitespace-nowrap max-md:mt-10">
                         <img
                           loading="lazy"
-                          srcSet="..."
+                          srcSet={people01}
                           className="self-center max-w-full aspect-[0.93] w-[121px]"
                         />
                         <div className="mt-3 text-xl font-bold text-gray-900">

@@ -1,3 +1,4 @@
+import { people01, people02, people03 } from "../assets"
 
 const SecureChat = () => {
   return (
@@ -58,7 +59,7 @@ const SecureChat = () => {
                   <div className="flex gap-3.5 justify-between">
                     <img
                       loading="lazy"
-                      srcSet="..."
+                      srcSet={people02}
                       className="aspect-square w-[60px]"
                     />
                     <div className="flex flex-col flex-1 my-auto">
@@ -81,7 +82,7 @@ const SecureChat = () => {
                   <div className="flex gap-3.5 justify-between">
                     <img
                       loading="lazy"
-                      srcSet="..."
+                      srcSet={people01}
                       className="aspect-square w-[60px]"
                     />
                     <div className="flex flex-col flex-1 my-auto">
@@ -106,7 +107,7 @@ const SecureChat = () => {
                   <div className="flex gap-3.5 justify-between">
                     <img
                       loading="lazy"
-                      srcSet="..."
+                      srcSet={people03}
                       className="aspect-square w-[60px]"
                     />
                     <div className="flex flex-col flex-1 my-auto">
@@ -131,7 +132,7 @@ const SecureChat = () => {
                   <div className="flex gap-3.5 justify-between">
                     <img
                       loading="lazy"
-                      srcSet="..."
+                      srcSet={people01}
                       className="aspect-square w-[60px]"
                     />
                     <div className="flex flex-col flex-1 my-auto">
@@ -156,7 +157,7 @@ const SecureChat = () => {
                   <div className="flex gap-3.5 justify-between">
                     <img
                       loading="lazy"
-                      srcSet="..."
+                      srcSet={people01}
                       className="aspect-square w-[60px]"
                     />
                     <div className="flex flex-col flex-1 my-auto">

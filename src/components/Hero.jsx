@@ -8,7 +8,7 @@ const Hero = () => {
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
 
         <div className="flex flex-row justify-between items-center w-full text-wrap">
-          <h1 className="flex-1 font-inter font-bold ss:text-[96px] text-[85px] text-black ss:leading-[90px] leading-[65px] text-wrap py-2 mt-0">
+          <h1 className="flex-1 font-inter font-bold ss:text-[96px] text-[75px] text-black ss:leading-[90px] leading-[65px] text-wrap py-2 mt-0  xs:text-[22px]  sm:leading-[90px] ">
              Improving 
         
           </h1>

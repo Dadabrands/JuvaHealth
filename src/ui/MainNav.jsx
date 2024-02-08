@@ -7,8 +7,11 @@ import { FaUserDoctor } from "react-icons/fa6";
 import { MdOutlinePayments } from "react-icons/md";
 import { BsChatDotsFill } from "react-icons/bs";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import { useState } from "react";
 
 function MainNav() {
+
+  useState
   return (
     <nav>
       <ul className="flex flex-col grow px-4 pb-4 mx-auto w-full font-normal text-xl font-inter bg-purple-50 text-stone-500 max-md:px-5 max-md:mt-10">
@@ -22,7 +25,7 @@ function MainNav() {
 
         <NavLink
           to="/vitals"
-          className="flex gap-5 justify-between p-3 mt-9 whitespace-nowrap rounded-xl bg-white bg-opacity-40 hover:text-white hover:bg-primary"
+          className="flex gap-5 justify-between p-3 mt-9 whitespace-nowrap rounded-xl  active:bg-primary bg-white bg-opacity-40 hover:text-white hover:bg-primary"
         >
           <FaHeartbeat className="w-6 selection:aspect-square text-primary hover:text-white hover:bg-primary" />
 
