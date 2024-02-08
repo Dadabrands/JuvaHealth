@@ -21,15 +21,8 @@ export async function registerPatient(data) {
 
 
 
-export async function loginPatient(data) {
-    const options = {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-        }
-    const res = await fetch(`${API_URL}api/patients/login-patient`,options);
+export async function loginPatient() {
+    const res = await fetch(`${API_URL}api/patients/login-patient`);
 
     if(!res.ok) throw Error("Login Error");
 
