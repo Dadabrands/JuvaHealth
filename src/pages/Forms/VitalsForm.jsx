@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const colors = ['bg-lightgreen', 'bg-secondary', 'bg-lightblue'];
 

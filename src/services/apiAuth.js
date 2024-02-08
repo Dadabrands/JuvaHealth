@@ -21,11 +21,23 @@ export async function registerPatient(data) {
 
 
 
-export async function loginPatient() {
-    const res = await fetch(`${API_URL}api/patients/login-patient`);
+export async function loginPatient(data) {
+    const options = {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+        }
+    const res = await fetch(`${API_URL}api/patients/login-patient`,options);
 
     if(!res.ok) throw Error("Login Error");
 
     const {userData} = await res.json();
     return userData;
+}
+
+
+export async function getCurrentUser() {
+    const res = await fetch(`${API_URL}api/pat`
 }
